@@ -34,6 +34,15 @@ def divide(a, b):
     return result
 
 # TODO: Students will add multiply, divide, power, sqrt functions
+def modulus(a,b):
+	if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+       	    raise TypeError("Both arguments must be numbers")
+	print(f"Modulus {a}%{b}")
+	result=a % b
+	print(result)
+	return result
+    
+	
 
 if __name__ == "__main__":
     print("🧮 Calculator Module")
